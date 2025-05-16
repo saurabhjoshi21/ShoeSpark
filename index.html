@@ -15,35 +15,35 @@
   <!-- Navbar -->
   <nav>
     <div class="logo">
-      <h1><a href="#Home">Shoe<span>Spark</span></a></h1>
+      <a href="#">Shoe<span>Spark</span></a>
     </div>
-    <div class="list">
-      <a href="#Home" class="nav-btn">
-        <h4>Home</h4>
-      </a>
-      <a href="#Trending" class="nav-btn">
-        <h4>Trending</h4>
-      </a>
-      <a href="#Products" class="nav-btn">
-        <h4>Products</h4>
-      </a>
-      <a href="#About" class="nav-btn">
-        <h4>About</h4>
-      </a>
-    </div>
+    <ul class="list" id="navbar">
+      <li><a href="#Home" class="nav-btn">
+          <h4>Home</h4>
+        </a></li>
+      <li><a href="#Trending" class="nav-btn">
+          <h4>Trending</h4>
+        </a></li>
+      <li><a href="#Products" class="nav-btn">
+          <h4>Products</h4>
+        </a></li>
+      <li><a href="#About" class="nav-btn">
+          <h4>About</h4>
+        </a></li>
+    </ul>
     <div class="icons">
-      <a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a>
-      <a href="#favorites"><i class="fa-regular fa-heart"></i></a>
-      <a href="#cart"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a href="#"><i class="fas fa-search"></i></a>
+      <a href="#"><i class="fas fa-heart"></i></a>
+      <a href="#"><i class="fas fa-lock"></i></a>
     </div>
   </nav>
 
   <!-- Home Hero Section -->
-  <section id="Home">
+  <section class="Home" id="Home">
     <div class="hero-content">
       <h1>Step Into <span>Style</span></h1>
       <p>Find the rarest sneakers at unbeatable prices.</p>
-      <button class="shop-now">Shop Now</button>
+      <a href="#Products" class="shop-now">Shop Now</a>
     </div>
   </section>
 
@@ -55,62 +55,100 @@
         <div class="underline"></div>
       </div>
 
-      <div class="trending-cards no-scroll">
-        <div class="cards-row">
-          <div class="trending-card">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9248cd4f-f2e2-4007-b58d-4fe72776fdcb/JORDAN+ROAM.png"
-              alt="Air Jordan 1 Retro" />
-            <div class="name">Jordan Roam Guava Ice</div>
-            <div class="category">Slides</div>
-            <div class="price">₹ 3999.00</div>
-            <button>Add to Cart</button>
-          </div>
-          <div class="trending-card">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/f85ecd8d-e0fc-450b-866a-c21b3b8a4366/AIR+JORDAN+3+RETRO+%28GS%29.png"
-              alt="Air Jordan 3 Retro 'Cement Grey'">
-            <div class="name">Air Jordan 3 Retro </div>
-            <div class="category">Men's Shoe</div>
-            <div class="price">₹17,999.00</div>
-            <button>Add to Cart</button>
-          </div>
-          <div class="trending-card">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7883e8b2-a2a8-4e77-9f4a-fd75964c3c4e/AIR+JORDAN+1+LOW+SE.png"
-              alt="Air Jordan 1 Low SE">
-            <div class="name">Air Jordan 1 Low SE</div>
-            <div class="category">Older Kids' Shoes</div>
-            <div class="price">₹10,999.00</div>
-            <button>Add to Cart</button>
-          </div>
-          <div class="trending-card">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c0b5982-fcbf-4195-9c84-a05ccb22f1be/AIR+JORDAN+11+RETRO.png"
-              alt="Air Jordan 11 Retro 'Legend Blue'">
-            <div class="name">Air Jordan 11 Retro</div>
-            <div class="category">Jordans</div>
-            <div class="price">₹18,999.00</div>
-            <button>Add to Cart</button>
-          </div>
-          <div class="trending-card">
-            <img
-              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/1cfbb98a-1685-4994-95f8-cc39558f852c/AIR+JORDAN+XXXIX+PF.png"
-              alt="Air Jordan XXXIX PF">
-            <div class="name">Air Jordan XXXIX PF</div>
-            <div class="category">Basketball Shoes</div>
-            <div class="price">₹17,477.00</div>
-            <button>Add to Cart</button>
-          </div>
+      <div class="trending-cards">
+        <div class="trending-card">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/JORDAN+ROAM.png"
+            alt="Jordan Roam Guava Ice" />
+          <div class="name">Jordan Roam</div>
+          <div class="category">Slides</div>
+          <div class="price">₹ 3999.00</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="trending-card">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/AIR+JORDAN+3+RETRO.png"
+            alt="Air Jordan 3 Retro">
+          <div class="name">Air Jordan 3 Retro</div>
+          <div class="category">Men's Shoe</div>
+          <div class="price">₹17,999.00</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="trending-card">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/AIR+JORDAN+1+LOW+SE.png"
+            alt="Air Jordan 1 Low SE">
+          <div class="name">Air Jordan 1 Low SE</div>
+          <div class="category">Older Kids' Shoes</div>
+          <div class="price">₹10,999.00</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="trending-card">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/AIR+JORDAN+11+RETRO.png"
+            alt="Air Jordan 11 Retro">
+          <div class="name">Air Jordan 11 Retro</div>
+          <div class="category">Jordans</div>
+          <div class="price">₹18,999.00</div>
+          <button>Add to Cart</button>
+        </div>
+        <div class="trending-card">
+          <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/AIR+JORDAN+XXXIX+PF.png"
+            alt="Air Jordan XXXIX PF">
+          <div class="name">Air Jordan XXXIX PF</div>
+          <div class="category">Basketball Shoes</div>
+          <div class="price">₹17,477.00</div>
+          <button>Add to Cart</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Products Section -->
+  <!-- Product Section -->
   <section id="Products" class="content-section">
     <div class="section-container">
-      <h1>Our Products</h1>
+      <div class="section-header">
+        <h1>Our Products</h1>
+        <div class="underline"></div>
+      </div>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a1919d1d-3bd8-47ae-9f83-2928dab2245c/AIR+ZOOM+ALPHAFLY+NEXT%25+3.png"
+            alt="Sneaker 1" />
+          <div class="name">Nike Alphafly 3</div>
+          <div class="category">Road Racing Shoes</div>
+          <div class="price">₹ 22,795.00</div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c0bef76c-db55-40d4-a8e4-996c31f13f65/NIKE+P-6000.png"
+            alt="Sneaker 2" />
+          <div class="name">Nike P-6000</div>
+          <div class="category"> Shoes</div>
+          <div class="price">₹ 6,695.00</div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7a2cd8e4-6615-448e-86ac-a219a73a0838/NIKE+REACTX+REJUVEN8+SLIDE.png"
+            alt="Sneaker 3" />
+          <div class="name">Nike ReactX Rejuven8</div>
+          <div class="category"> Men's Slides</div>
+          <div class="price">₹ 4,695.00</div>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8711affa-6e41-427a-a78a-550152eb840d/NIKE+AQUASWOOSH+%28TD%29.png"
+            alt="Sneaker 4" />
+          <div class="name">Nike Aqua Swoosh</div>
+          <div class="category">Baby/Toddler Sandals</div>
+          <div class="price">₹ 3,499.00</div>
+          <button>Add to Cart</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -125,6 +163,15 @@
       </p>
     </div>
   </section>
+
+  <!-- Cart Popup -->
+  <div class="popup-overlay" id="cart-popup">
+    <div class="popup-content">
+      <h2>Item Added to Cart!</h2>
+      <p>Your item has been successfully added to your cart.</p>
+      <button onclick="closePopup()">Continue Shopping</button>
+    </div>
+  </div>
 
   <script src="javascript.js"></script>
 </body>
