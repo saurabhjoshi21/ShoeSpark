@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -149,7 +148,7 @@ nav .icons a:hover {
 .hero-content .shop-now {
     opacity: 0;
     transform: translateY(40px);
-    animation: slideFadeUp 1s ease-out forwards;
+    animation: slideFadeUp 2s ease-out forwards;
 }
 
 .hero-content h1 {
@@ -399,7 +398,6 @@ nav .icons a:hover {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-
     nav {
         flex-direction: column;
         padding: 10px;
